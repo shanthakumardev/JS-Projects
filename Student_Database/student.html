@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student DB</title>
+        <link rel="stylesheet" href="css/student.css">
+    </head>
+    <body>
+        <h1> Student Registeration Form </h1>
+        <form id="studentForm" onsubmit="addStudent(event)">
+            <input type="text" id="name" class="textBox" name="name"/>
+            <input type="text" id="address" class="textBox" name="address">
+            <input type="submit" value="Add Student"/>
+        </form>
+        <!-- <button onclick="addStudent()">ADD STUDENT BUTTON</button> -->
+        <h1>Student Details</h1>
+        <div id="studentDetails"></div>
+        <script src="./js/student.js"></script>
+    </body>
+</html>
+

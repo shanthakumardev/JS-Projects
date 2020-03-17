@@ -1,0 +1,11 @@
+.content {
+    border: 1px solid red;
+    padding:10px;
+    width: 75px;
+    display:inline-block;
+    height:50px;
+}
+
+.textBox {
+    width:200px;
+}
