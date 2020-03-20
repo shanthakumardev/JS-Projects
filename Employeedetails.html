@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee details</title>
+        <link rel="stylesheet" href="css/Employeedetails.css">
+    </head>
+    <body bgcolor="pink">
+        <form id="form" onsubmit="addemployee(event)">
+            <label>Name</label>
+            <input type="text" id="name" class="textbox" name="name" onkeyup="textValidation('name', 'errorMsg')">
+            <span id= "errorMsg" style="color:red;" hidden>Name should be filledOUt</span><br><br>
+            
+            <label>Designation</label>
+            <input type="text" id="designation" class="textbox" name="designation" onkeyup="textValidation('designation', 'errorMsgdes')">
+            <span id= "errorMsgdes" style="color:red;" hidden>Designation should be filledOUt</span><br><br>
+            <label>Salary</label>
+            <select id = "myList">
+                <option value = "1">Select salary</option>
+                <option value = "2">10,000</option>
+              <option value = "3">20,000</option>
+              <option value = "4">30,000</option>
+              <option value = "5">40,000</option>
+            </select><br><br>
+            <label><b>Technical skills</b></label>
+            <input type="checkbox" name="technology" value="html" > HTML
+            <input type="checkbox" name="technology" value="css"> CSS 
+            <input type="checkbox" name="technology " value="javascript"> JAVASCRIPT 
+            <br><br>
+            <input type="radio" name="qual" value="UG">UG
+            <input type="radio" name="qual" value="PG">PG
+            <input type="radio" name="qual" value="Ph.D">Ph.D
+            <input type="submit" value="Add Employee details">
+            <input type="button" onclick="resetForm()" value="Clear">
+            
+        </form>
+        
+        <br>
+        <h1>Employee details</h1>
+        <div id="studentDetails"></div>
+
+        <script src="js/Emploeedetails.js"></script>
+    </body>
+</html>
